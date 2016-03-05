@@ -17,7 +17,7 @@ import CoreData
 		notificationCenter.addObserver(self, selector: "importContextDidSaveNotification:", name: NSManagedObjectContextDidSaveNotification, object: workingContext)
 	}
 
-	private func importContextDidSaveNotification(notification: NSNotification) {
+	@objc private func importContextDidSaveNotification(notification: NSNotification) {
 		mainContext.mergeChangesFromContextDidSaveNotification(notification)
 	}
 }
