@@ -10,6 +10,9 @@
 		241F38911C8AF38800CDCE14 /* WorkingContextProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		241F38C51C8AF58200CDCE14 /* WorkingContextProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		241F38CF1C8AF58500CDCE14 /* WorkingContextProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241F38D61C8AF63A00CDCE14 /* WorkingContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F38D51C8AF63A00CDCE14 /* WorkingContextProvider.swift */; };
+		241F38D71C8AF63A00CDCE14 /* WorkingContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F38D51C8AF63A00CDCE14 /* WorkingContextProvider.swift */; };
+		241F38D81C8AF63A00CDCE14 /* WorkingContextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241F38D51C8AF63A00CDCE14 /* WorkingContextProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,7 @@
 		241F38BF1C8AF46100CDCE14 /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
 		241F38CA1C8AF58200CDCE14 /* WorkingContextProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkingContextProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		241F38D41C8AF58500CDCE14 /* WorkingContextProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkingContextProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241F38D51C8AF63A00CDCE14 /* WorkingContextProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingContextProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */,
+				241F38D51C8AF63A00CDCE14 /* WorkingContextProvider.swift */,
 				241F38921C8AF38800CDCE14 /* Info.plist */,
 			);
 			path = WorkingContextProvider;
@@ -328,6 +333,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241F38D61C8AF63A00CDCE14 /* WorkingContextProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241F38D71C8AF63A00CDCE14 /* WorkingContextProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241F38D81C8AF63A00CDCE14 /* WorkingContextProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
