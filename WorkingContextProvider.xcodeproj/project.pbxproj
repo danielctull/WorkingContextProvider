@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		241F38911C8AF38800CDCE14 /* WorkingContextProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241F38C51C8AF58200CDCE14 /* WorkingContextProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		241F38CF1C8AF58500CDCE14 /* WorkingContextProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 241F38901C8AF38800CDCE14 /* WorkingContextProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +51,26 @@
 		241F38BD1C8AF46100CDCE14 /* watchOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Extension.xcconfig"; sourceTree = "<group>"; };
 		241F38BE1C8AF46100CDCE14 /* watchOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "watchOS Framework.xcconfig"; sourceTree = "<group>"; };
 		241F38BF1C8AF46100CDCE14 /* watchOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = watchOS.xcconfig; sourceTree = "<group>"; };
+		241F38CA1C8AF58200CDCE14 /* WorkingContextProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkingContextProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241F38D41C8AF58500CDCE14 /* WorkingContextProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkingContextProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		241F38891C8AF38800CDCE14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F38C31C8AF58200CDCE14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F38CD1C8AF58500CDCE14 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +93,8 @@
 			isa = PBXGroup;
 			children = (
 				241F388D1C8AF38800CDCE14 /* WorkingContextProvider.framework */,
+				241F38CA1C8AF58200CDCE14 /* WorkingContextProvider.framework */,
+				241F38D41C8AF58500CDCE14 /* WorkingContextProvider.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,12 +193,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		241F38C41C8AF58200CDCE14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241F38C51C8AF58200CDCE14 /* WorkingContextProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F38CE1C8AF58500CDCE14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				241F38CF1C8AF58500CDCE14 /* WorkingContextProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		241F388C1C8AF38800CDCE14 /* WorkingContextProvider */ = {
+		241F388C1C8AF38800CDCE14 /* WorkingContextProvider iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 241F38951C8AF38800CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider" */;
+			buildConfigurationList = 241F38951C8AF38800CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider iOS" */;
 			buildPhases = (
 				241F38881C8AF38800CDCE14 /* Sources */,
 				241F38891C8AF38800CDCE14 /* Frameworks */,
@@ -189,9 +225,45 @@
 			);
 			dependencies = (
 			);
-			name = WorkingContextProvider;
+			name = "WorkingContextProvider iOS";
 			productName = WorkingContextProvider;
 			productReference = 241F388D1C8AF38800CDCE14 /* WorkingContextProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		241F38C11C8AF58200CDCE14 /* WorkingContextProvider OS X */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider OS X" */;
+			buildPhases = (
+				241F38C21C8AF58200CDCE14 /* Sources */,
+				241F38C31C8AF58200CDCE14 /* Frameworks */,
+				241F38C41C8AF58200CDCE14 /* Headers */,
+				241F38C61C8AF58200CDCE14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WorkingContextProvider OS X";
+			productName = WorkingContextProvider;
+			productReference = 241F38CA1C8AF58200CDCE14 /* WorkingContextProvider.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		241F38CB1C8AF58500CDCE14 /* WorkingContextProvider tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 241F38D11C8AF58500CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider tvOS" */;
+			buildPhases = (
+				241F38CC1C8AF58500CDCE14 /* Sources */,
+				241F38CD1C8AF58500CDCE14 /* Frameworks */,
+				241F38CE1C8AF58500CDCE14 /* Headers */,
+				241F38D01C8AF58500CDCE14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WorkingContextProvider tvOS";
+			productName = WorkingContextProvider;
+			productReference = 241F38D41C8AF58500CDCE14 /* WorkingContextProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +292,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				241F388C1C8AF38800CDCE14 /* WorkingContextProvider */,
+				241F388C1C8AF38800CDCE14 /* WorkingContextProvider iOS */,
+				241F38C11C8AF58200CDCE14 /* WorkingContextProvider OS X */,
+				241F38CB1C8AF58500CDCE14 /* WorkingContextProvider tvOS */,
 			);
 		};
 /* End PBXProject section */
@@ -233,10 +307,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		241F38C61C8AF58200CDCE14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F38D01C8AF58500CDCE14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		241F38881C8AF38800CDCE14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F38C21C8AF58200CDCE14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		241F38CC1C8AF58500CDCE14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,6 +382,38 @@
 			};
 			name = Release;
 		};
+		241F38C81C8AF58200CDCE14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241F38AB1C8AF46100CDCE14 /* OS X Framework.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = WorkingContextProvider;
+			};
+			name = Debug;
+		};
+		241F38C91C8AF58200CDCE14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241F38AB1C8AF46100CDCE14 /* OS X Framework.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = WorkingContextProvider;
+			};
+			name = Release;
+		};
+		241F38D21C8AF58500CDCE14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241F38B51C8AF46100CDCE14 /* tvOS Framework.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = WorkingContextProvider;
+			};
+			name = Debug;
+		};
+		241F38D31C8AF58500CDCE14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241F38B51C8AF46100CDCE14 /* tvOS Framework.xcconfig */;
+			buildSettings = {
+				PRODUCT_NAME = WorkingContextProvider;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -292,13 +426,31 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		241F38951C8AF38800CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider" */ = {
+		241F38951C8AF38800CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				241F38961C8AF38800CDCE14 /* Debug */,
 				241F38971C8AF38800CDCE14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+		};
+		241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider OS X" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241F38C81C8AF58200CDCE14 /* Debug */,
+				241F38C91C8AF58200CDCE14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		241F38D11C8AF58500CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				241F38D21C8AF58500CDCE14 /* Debug */,
+				241F38D31C8AF58500CDCE14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
