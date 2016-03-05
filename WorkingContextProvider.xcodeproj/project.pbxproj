@@ -441,6 +441,7 @@
 				241F38971C8AF38800CDCE14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider OS X" */ = {
 			isa = XCConfigurationList;
