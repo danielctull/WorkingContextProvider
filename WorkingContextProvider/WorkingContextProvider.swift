@@ -14,7 +14,7 @@ import CoreData
 		super.init()
 
 		let notificationCenter = NSNotificationCenter.defaultCenter()
-		notificationCenter.addObserver(self, selector: "importContextDidSaveNotification:", name: NSManagedObjectContextDidSaveNotification, object: workingContext)
+		notificationCenter.addObserver(self, selector: #selector(WorkingContextProvider.importContextDidSaveNotification(_:)), name: NSManagedObjectContextDidSaveNotification, object: workingContext)
 	}
 
 	@objc private func importContextDidSaveNotification(notification: NSNotification) {
