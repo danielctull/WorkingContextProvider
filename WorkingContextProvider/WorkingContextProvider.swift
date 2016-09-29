@@ -9,15 +9,15 @@ import CoreData
 
 	public init(managedObjectContext: NSManagedObjectContext) {
 		mainContext = managedObjectContext
-		workingContext = NSManagedObjectContext(concurrencyType: .PrivateQueueConcurrencyType)
+		workingContext = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
 		workingContext.persistentStoreCoordinator = mainContext.persistentStoreCoordinator
 		super.init()
 
-		let notificationCenter = NSNotificationCenter.defaultCenter()
-		notificationCenter.addObserver(self, selector: #selector(WorkingContextProvider.importContextDidSaveNotification(_:)), name: NSManagedObjectContextDidSaveNotification, object: workingContext)
+		let notificationCenter = NotificationCenter.default
+		notificationCenter.addObserver(self, selector: #selector(WorkingContextProvider.importContextDidSaveNotification(_:)), name: NSNotification.Name.NSManagedObjectContextDidSave, object: workingContext)
 	}
 
-	@objc private func importContextDidSaveNotification(notification: NSNotification) {
-		mainContext.mergeChangesFromContextDidSaveNotification(notification)
+	@objc private func importContextDidSaveNotification(_ notification: Notification) {
+		mainContext.mergeChanges(fromContextDidSave: notification)
 	}
 }
