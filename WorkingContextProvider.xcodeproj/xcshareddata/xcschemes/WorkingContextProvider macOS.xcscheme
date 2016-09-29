@@ -16,7 +16,7 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "241F38C11C8AF58200CDCE14"
                BuildableName = "WorkingContextProvider.framework"
-               BlueprintName = "WorkingContextProvider OS X"
+               BlueprintName = "WorkingContextProvider macOS"
                ReferencedContainer = "container:WorkingContextProvider.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -47,7 +47,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "241F38C11C8AF58200CDCE14"
             BuildableName = "WorkingContextProvider.framework"
-            BlueprintName = "WorkingContextProvider OS X"
+            BlueprintName = "WorkingContextProvider macOS"
             ReferencedContainer = "container:WorkingContextProvider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -65,7 +65,7 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "241F38C11C8AF58200CDCE14"
             BuildableName = "WorkingContextProvider.framework"
-            BlueprintName = "WorkingContextProvider OS X"
+            BlueprintName = "WorkingContextProvider macOS"
             ReferencedContainer = "container:WorkingContextProvider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

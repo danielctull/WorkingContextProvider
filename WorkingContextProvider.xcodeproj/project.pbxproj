@@ -30,12 +30,6 @@
 		241F38A51C8AF46100CDCE14 /* iOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS Tests.xcconfig"; sourceTree = "<group>"; };
 		241F38A61C8AF46100CDCE14 /* iOS UI Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "iOS UI Tests.xcconfig"; sourceTree = "<group>"; };
 		241F38A71C8AF46100CDCE14 /* iOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = iOS.xcconfig; sourceTree = "<group>"; };
-		241F38A91C8AF46100CDCE14 /* OS X Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Application.xcconfig"; sourceTree = "<group>"; };
-		241F38AA1C8AF46100CDCE14 /* OS X Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Extension.xcconfig"; sourceTree = "<group>"; };
-		241F38AB1C8AF46100CDCE14 /* OS X Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Framework.xcconfig"; sourceTree = "<group>"; };
-		241F38AC1C8AF46100CDCE14 /* OS X Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X Tests.xcconfig"; sourceTree = "<group>"; };
-		241F38AD1C8AF46100CDCE14 /* OS X UI Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X UI Tests.xcconfig"; sourceTree = "<group>"; };
-		241F38AE1C8AF46100CDCE14 /* OS X.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "OS X.xcconfig"; sourceTree = "<group>"; };
 		241F38AF1C8AF46100CDCE14 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		241F38B31C8AF46100CDCE14 /* tvOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS Application.xcconfig"; sourceTree = "<group>"; };
 		241F38B41C8AF46100CDCE14 /* tvOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "tvOS Extension.xcconfig"; sourceTree = "<group>"; };
@@ -51,6 +45,12 @@
 		241F38D41C8AF58500CDCE14 /* WorkingContextProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkingContextProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		241F38D51C8AF63A00CDCE14 /* WorkingContextProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkingContextProvider.swift; sourceTree = "<group>"; };
 		244A43C11D9D0B7B009A622C /* WorkingContextProvider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WorkingContextProvider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244A43C31D9D0C05009A622C /* macOS Application.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Application.xcconfig"; sourceTree = "<group>"; };
+		244A43C41D9D0C05009A622C /* macOS Extension.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Extension.xcconfig"; sourceTree = "<group>"; };
+		244A43C51D9D0C05009A622C /* macOS Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Framework.xcconfig"; sourceTree = "<group>"; };
+		244A43C61D9D0C05009A622C /* macOS Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS Tests.xcconfig"; sourceTree = "<group>"; };
+		244A43C71D9D0C05009A622C /* macOS UI Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "macOS UI Tests.xcconfig"; sourceTree = "<group>"; };
+		244A43C81D9D0C05009A622C /* macOS.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = macOS.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 			children = (
 				241F389B1C8AF46100CDCE14 /* Debug.xcconfig */,
 				241F389F1C8AF46100CDCE14 /* iOS */,
-				241F38A81C8AF46100CDCE14 /* OS X */,
+				244A43C21D9D0C05009A622C /* macOS */,
 				241F38AF1C8AF46100CDCE14 /* Release.xcconfig */,
 				241F38B21C8AF46100CDCE14 /* tvOS */,
 				241F38BB1C8AF46100CDCE14 /* watchOS */,
@@ -141,19 +141,6 @@
 				241F38A71C8AF46100CDCE14 /* iOS.xcconfig */,
 			);
 			path = iOS;
-			sourceTree = "<group>";
-		};
-		241F38A81C8AF46100CDCE14 /* OS X */ = {
-			isa = PBXGroup;
-			children = (
-				241F38A91C8AF46100CDCE14 /* OS X Application.xcconfig */,
-				241F38AA1C8AF46100CDCE14 /* OS X Extension.xcconfig */,
-				241F38AB1C8AF46100CDCE14 /* OS X Framework.xcconfig */,
-				241F38AC1C8AF46100CDCE14 /* OS X Tests.xcconfig */,
-				241F38AD1C8AF46100CDCE14 /* OS X UI Tests.xcconfig */,
-				241F38AE1C8AF46100CDCE14 /* OS X.xcconfig */,
-			);
-			path = "OS X";
 			sourceTree = "<group>";
 		};
 		241F38B21C8AF46100CDCE14 /* tvOS */ = {
@@ -178,6 +165,19 @@
 				241F38BF1C8AF46100CDCE14 /* watchOS.xcconfig */,
 			);
 			path = watchOS;
+			sourceTree = "<group>";
+		};
+		244A43C21D9D0C05009A622C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				244A43C31D9D0C05009A622C /* macOS Application.xcconfig */,
+				244A43C41D9D0C05009A622C /* macOS Extension.xcconfig */,
+				244A43C51D9D0C05009A622C /* macOS Framework.xcconfig */,
+				244A43C61D9D0C05009A622C /* macOS Tests.xcconfig */,
+				244A43C71D9D0C05009A622C /* macOS UI Tests.xcconfig */,
+				244A43C81D9D0C05009A622C /* macOS.xcconfig */,
+			);
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +236,9 @@
 			productReference = 241F388D1C8AF38800CDCE14 /* WorkingContextProvider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		241F38C11C8AF58200CDCE14 /* WorkingContextProvider OS X */ = {
+		241F38C11C8AF58200CDCE14 /* WorkingContextProvider macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider OS X" */;
+			buildConfigurationList = 241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider macOS" */;
 			buildPhases = (
 				241F38C21C8AF58200CDCE14 /* Sources */,
 				241F38C31C8AF58200CDCE14 /* Frameworks */,
@@ -249,7 +249,7 @@
 			);
 			dependencies = (
 			);
-			name = "WorkingContextProvider OS X";
+			name = "WorkingContextProvider macOS";
 			productName = WorkingContextProvider;
 			productReference = 241F38CA1C8AF58200CDCE14 /* WorkingContextProvider.framework */;
 			productType = "com.apple.product-type.framework";
@@ -318,7 +318,7 @@
 			projectRoot = "";
 			targets = (
 				241F388C1C8AF38800CDCE14 /* WorkingContextProvider iOS */,
-				241F38C11C8AF58200CDCE14 /* WorkingContextProvider OS X */,
+				241F38C11C8AF58200CDCE14 /* WorkingContextProvider macOS */,
 				241F38CB1C8AF58500CDCE14 /* WorkingContextProvider tvOS */,
 				244A43B71D9D0B7B009A622C /* WorkingContextProvider watchOS */,
 			);
@@ -436,7 +436,7 @@
 		};
 		241F38C81C8AF58200CDCE14 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 241F38AB1C8AF46100CDCE14 /* OS X Framework.xcconfig */;
+			baseConfigurationReference = 244A43C51D9D0C05009A622C /* macOS Framework.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = WorkingContextProvider;
 			};
@@ -444,7 +444,7 @@
 		};
 		241F38C91C8AF58200CDCE14 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 241F38AB1C8AF46100CDCE14 /* OS X Framework.xcconfig */;
+			baseConfigurationReference = 244A43C51D9D0C05009A622C /* macOS Framework.xcconfig */;
 			buildSettings = {
 				PRODUCT_NAME = WorkingContextProvider;
 			};
@@ -503,7 +503,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider OS X" */ = {
+		241F38C71C8AF58200CDCE14 /* Build configuration list for PBXNativeTarget "WorkingContextProvider macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				241F38C81C8AF58200CDCE14 /* Debug */,
